@@ -28,12 +28,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 9%;
-  background-color: transparent;
+  /* padding: 1rem 9%; */
+  /* background-color: transparent; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  background-color: black; 
+  padding: 1rem;
 }
 
 .logo {
@@ -96,10 +98,10 @@ nav a.active {
   }
 }
 
-section {
-  min-height: 100vh;
+/* section {
+  min-height: auto;
   padding: 5rem 9%;
-}
+} */
 
 .home {
   display: flex;
@@ -196,7 +198,7 @@ section .content {
   margin-top: 2rem;
   font-size: 1.8rem;
   color: white;
-  padding: 2rem;
+  padding: 2rem ;
   border-radius: 1rem;
   background-color: #1b1b1b;
   box-shadow: 0 0 15px #b74b4d;
@@ -272,13 +274,13 @@ body {
 }
 
 header{
-    margin-top: 20px;
+    margin-top: 0px;
     position: fixed ;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1rem 9% ;
-    background-color: transparent;
+    /* background-color: transparent; */
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
@@ -348,7 +350,7 @@ nav a.active{
 }
 
 section{
-    min-height: 100vh;
+    min-height: auto;
     padding: 5rem 9% 5rem;
 }
 
@@ -358,6 +360,7 @@ section{
     align-items: center;
     gap: 8rem;
     background-color: black;
+    margin-top: 50px;
 }
 
 .home .home-content h1{
@@ -377,7 +380,9 @@ span{
 .home-img{
     border-radius: 50%;
 }
-
+/* .image_data{
+  margin-top: 0px !important; 
+} */
 .home-img img{
     position: relative;
     width: 32vw;
