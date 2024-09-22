@@ -98,11 +98,6 @@ nav a.active {
   }
 }
 
-/* section {
-  min-height: auto;
-  padding: 5rem 9%;
-} */
-
 .home {
   display: flex;
   justify-content: center;
