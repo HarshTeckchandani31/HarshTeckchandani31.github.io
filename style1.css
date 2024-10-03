@@ -491,3 +491,55 @@ span{
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
+#skills {
+  text-align: center;
+}
+
+.skills-carousel {
+  position: relative;
+  width: 100%; /* Adjust the width as needed */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Ensures items stay inside the container */
+}
+
+.skills-wrapper {
+  overflow: hidden; /* Ensure that only a part of the grid is visible */
+  width: 100%;
+}
+
+.skills-grid {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content; /* Allows the items to stretch based on content */
+}
+
+.skill-item {
+  flex: 0 0 180px; /* Fixed width for each item */
+  margin: 0 10px; /* Margin between skill items */
+  text-align: center;
+  padding: 10px;
+  color: #b74b4d;
+  box-sizing: border-box;
+}
+
+#prev, #next {
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  z-index: 2;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
