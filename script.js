@@ -37,3 +37,58 @@ function eraseText() {
 }
 
 window.onload = typeWriter
+const skillsGrid = document.querySelector('.skills-grid');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+
+// Clone the first few skill items to make the rotation seamless
+const totalItems = document.querySelectorAll('.skill-item').length;
+const visibleItems = 4; // Number of visible items in the carousel
+const skillItemWidth = 180 + 20; // Width of .skill-item + margin
+let currentIndex = visibleItems; // Start at the cloned first set
+
+// Clone the first and last few items
+const itemsToClone = Array.from(document.querySelectorAll('.skill-item')).slice(0, visibleItems);
+itemsToClone.forEach(item => {
+    const clone = item.cloneNode(true);
+    skillsGrid.appendChild(clone);
+});
+
+// Set initial button states and add smooth sliding
+skillsGrid.style.transition = 'transform 0.5s ease-in-out';
+skillsGrid.style.transform = `translateX(-${currentIndex * skillItemWidth}px)`;
+
+nextBtn.addEventListener('click', () => {
+    currentIndex++;
+    updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex--;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    // Move the carousel smoothly
+    skillsGrid.style.transition = 'transform 0.5s ease-in-out';
+    skillsGrid.style.transform = `translateX(-${currentIndex * skillItemWidth}px)`;
+
+    // Circular effect logic
+    if (currentIndex >= totalItems) {
+        // If we move past the last real item, instantly go back to the start (first set)
+        setTimeout(() => {
+            skillsGrid.style.transition = 'none'; // Remove transition for the jump
+            currentIndex = visibleItems;
+            skillsGrid.style.transform = `translateX(-${currentIndex * skillItemWidth}px)`;
+        }, 500); // Wait for the current transition to finish
+    }
+
+    if (currentIndex <= 0) {
+        // If we move past the first real item, instantly go to the last set
+        setTimeout(() => {
+            skillsGrid.style.transition = 'none'; // Remove transition for the jump
+            currentIndex = totalItems - visibleItems;
+            skillsGrid.style.transform = `translateX(-${currentIndex * skillItemWidth}px)`;
+        }, 500); // Wait for the current transition to finish
+    }
+}
