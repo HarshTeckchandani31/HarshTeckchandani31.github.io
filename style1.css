@@ -475,6 +475,7 @@ span{
 .project_icon{
 width: 100px; /* Adjust size if necessary */
 height: 100px;
+  margin: auto;
 }
 
 .project-grid {
