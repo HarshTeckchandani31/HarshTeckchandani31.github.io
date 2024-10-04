@@ -465,6 +465,33 @@ span{
     }
 
 }
+
+/*projects */
+
+#projects {
+  padding: 4rem 0;
+  background-color: #1b1b1b;
+}
+
+.project-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.project-item {
+  flex: 1;
+  background-color: #1b1b1b;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*education*/
 .education-container {
     display: flex;
     justify-content: space-between;
@@ -491,7 +518,7 @@ span{
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-
+/* Skills */
 #skills {
   text-align: center;
 }
@@ -543,7 +570,7 @@ span{
   right: 10px;
 }
 
-
+/* Contact form */
 #contact {
     background-color: #f9f9f9;
     padding: 20px;
@@ -585,5 +612,14 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/*footer*/
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
 }
 
