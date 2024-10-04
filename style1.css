@@ -469,8 +469,7 @@ span{
 /*projects */
 
 #projects {
-  padding: 4rem 0;
-  background-color: #1b1b1b;
+  text-align: center;
 }
 
 .project-grid {
