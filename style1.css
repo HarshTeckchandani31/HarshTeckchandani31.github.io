@@ -468,8 +468,13 @@ span{
 
 /*projects */
 
+
 #projects {
   text-align: center;
+}
+.project_icon{
+width: 100px; /* Adjust size if necessary */
+height: 100px;
 }
 
 .project-grid {
