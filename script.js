@@ -92,3 +92,12 @@ function updateCarousel() {
         }, 500); // Wait for the current transition to finish
     }
 }
+
+
+
+
+
+document.getElementById("contact-form").addEventListener("submit", function() {
+    alert("Thank you! Your message has been sent.");
+});
+
