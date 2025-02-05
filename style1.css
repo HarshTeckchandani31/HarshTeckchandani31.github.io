@@ -627,4 +627,11 @@ footer {
   background-color: #333;
   color: #fff;
 }
+/*Screenshot*/
+@media (prefers-color-scheme: dark) {
+  html, body {
+    filter: invert(1) grayscale(1);
+  }
+}
+
 
