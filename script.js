@@ -126,3 +126,39 @@ document.getElementById("contact-form").addEventListener("submit", function() {
     alert("Thank you! Your message has been sent.");
 });
 
+
+// Disable right-click context menu
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+
+// Disable certain keyboard shortcuts
+document.addEventListener("keydown", function (event) {
+    if (
+        event.ctrlKey &&
+        (event.key === "u" || event.key === "U" || // View Source
+         event.key === "c" || event.key === "C" || // Copy
+         event.key === "x" || event.key === "X" || // Cut
+         event.key === "v" || event.key === "V" || // Paste
+         event.key === "s" || event.key === "S" || // Save
+         event.key === "p" || event.key === "P")   // Print
+    ) {
+        event.preventDefault();
+    }
+    if (
+        event.key === "F12" || 
+        (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "i")) // DevTools
+    ) {
+        event.preventDefault();
+    }
+});
+
+// Disable text selection
+document.addEventListener("selectstart", function (event) {
+    event.preventDefault();
+});
+
+// Disable drag-and-drop
+document.addEventListener("dragstart", function (event) {
+    event.preventDefault();
+});
