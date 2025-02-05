@@ -162,3 +162,13 @@ document.addEventListener("selectstart", function (event) {
 document.addEventListener("dragstart", function (event) {
     event.preventDefault();
 });
+
+
+// Screen blur when screenshot detected
+document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+        document.body.style.filter = "blur(10px)";
+    } else {
+        document.body.style.filter = "none";
+    }
+});
