@@ -165,10 +165,10 @@ document.addEventListener("dragstart", function (event) {
 
 
 // Screen blur when screenshot detected
-document.addEventListener("visibilitychange", function () {
-    if (document.hidden) {
-        document.body.style.filter = "blur(10px)";
-    } else {
-        document.body.style.filter = "none";
-    }
-});
+// document.addEventListener("visibilitychange", function () {
+//     if (document.hidden) {
+//         document.body.style.filter = "blur(10px)";
+//     } else {
+//         document.body.style.filter = "none";
+//     }
+// });
