@@ -1,0 +1,26 @@
+{
+    "education": [
+        {
+            "degree": "Bachelor of Technology in Computer Science",
+            "institution": "ABC University",
+            "year": "2018 - 2022"
+        },
+        {
+            "degree": "Master of Science in AI & ML",
+            "institution": "XYZ University",
+            "year": "2023 - Present"
+        }
+    ],
+    "experience": [
+        {
+            "position": "Software Developer",
+            "company": "Tech Solutions Pvt Ltd",
+            "year": "2022 - Present"
+        },
+        {
+            "position": "Intern - Web Development",
+            "company": "Startup Hub",
+            "year": "2021 - 2022"
+        }
+    ]
+}
