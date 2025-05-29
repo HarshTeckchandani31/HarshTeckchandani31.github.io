@@ -1,0 +1,24 @@
+{
+    "skills": [
+        {
+            "category": "Frontend",
+            "technologies": ["HTML", "CSS", "JavaScript","Bootstrap4"]
+        },
+        {
+            "category": "Backend",
+            "technologies": ["Python", "Django", "Core JAVA"]
+        },
+        {
+            "category": "Databases",
+            "technologies": ["MySQL", "MongoDB"]
+        },
+        {
+            "category": "CMS",
+            "technologies": ["WordPress"]
+        },
+        {
+            "category": "AI & ML",
+            "technologies": ["Machine Learning", "Deep Learning"]
+        }
+    ]
+}
