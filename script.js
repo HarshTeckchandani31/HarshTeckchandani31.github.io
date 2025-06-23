@@ -172,3 +172,75 @@ document.addEventListener("dragstart", function (event) {
 //         document.body.style.filter = "none";
 //     }
 // });
+
+// particle effect
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    },
+    color: {
+      value: "#b74b4d"
+    },
+    shape: {
+      type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000"
+      },
+    },
+    opacity: {
+      value: 0.5,
+      random: true,
+      anim: {
+        enable: false
+      }
+    },
+    size: {
+      value: 4,
+      random: true,
+      anim: {
+        enable: false
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#b74b4d",
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      direction: "none",
+      out_mode: "out"
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "grab"
+      },
+      onclick: {
+        enable: false
+      }
+    },
+    modes: {
+      grab: {
+        distance: 140,
+        line_linked: {
+          opacity: 0.6
+        }
+      }
+    }
+  },
+  retina_detect: true
+});
+
