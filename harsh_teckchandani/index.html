@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Harsh Teckchandani — Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Particles lib -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <!-- Particles background -->
+  <div id="particles-js" aria-hidden="true"></div>
+
+  <!-- Top header (mobile) -->
+  <header class="top-header">
+    <div class="brand">
+      <a href="#" class="logo">Harsh <span class="logo-accent">T</span></a>
+    </div>
+
+    <div class="controls">
+      <button id="shapeToggle" class="control-btn" title="Change profile shape"><i class="fa-solid fa-shapes"></i></button>
+      <button id="hackerToggle" class="control-btn" title="Toggle Hacker Mode"><i class="fa-solid fa-bolt"></i></button>
+      <button id="menuToggle" class="control-btn menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Sidebar (desktop) -->
+  <aside id="sidebar" class="sidebar">
+    <div class="profile-card">
+      <div id="profileFrame" class="profile-frame circle">
+        <img src="assets/images/profile.jpg" alt="Harsh Teckchandani photo">
+      </div>
+      <h1 class="name">Harsh <span>Teckchandani</span></h1>
+      <p class="tagline">Data Scientist · Bug Bounty Hunter · Software Developer</p>
+
+      <nav class="side-nav">
+        <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+        <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+        <a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a>
+        <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </nav>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/harsh-t-a524471a2/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/HarshTeckchandani31" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/iam_harsh08" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main one-page content -->
+  <main id="home" class="main">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="intro">
+          <h2 class="hello">Hi, I'm</h2>
+          <h1 class="hero-name">Harsh <span class="accent">Teckchandani</span></h1>
+
+          <div class="typewriter">
+            <span id="typewriter-text" class="typewriter-text"></span>
+            <span class="cursor">|</span>
+          </div>
+
+          <p class="lead">
+            Master's in Computer Science & Engineering. I build data-driven systems, hunt vulnerabilities, and write scalable software.
+            My work spans machine learning models, penetration testing, and backend/frontend engineering.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn ghost" href="mailto:harsh.teckchandani@outlook.com">Hire / Contact</a>
+          </div>
+
+          <div class="small-cta">
+            <span class="pill">M.Tech • Parul University</span>
+            <span class="pill">Open to Job Opportunities & remote roles</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="visual-stats">
+              <div><strong>ML</strong><small>Models</small></div>
+              <div><strong>30+</strong><small>Vuln Reports</small></div>
+              <div><strong>5</strong><small>Internships</small></div>
+            </div>
+
+            <div class="visual-code">
+              <pre><code>// sample
+def predict(img):
+  # Emotion -> Music mapping
+  pass
+</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Selected Projects</h2>
+        <p class="muted">A mix of data science, tools, and security work.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/images/emp.webp" alt="Emotion-based music player">
+          </div>
+          <div class="project-body">
+            <h3>Emotion-based Music Player</h3>
+            <p>Used CNN + OpenCV to detect facial emotion and recommend music playlists automatically.</p>
+            <div class="tags"><span>Python</span><span>CV</span><span>ML</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/images/nvs.webp" alt="Network Vulnerability Scanner">
+          </div>
+          <div class="project-body">
+            <h3>Network Vulnerability Scanner</h3>
+            <p>Custom scanner integrating Nmap, vulnerability detection, and reporting automation.</p>
+            <div class="tags"><span>Python</span><span>Security</span><span>Nmap</span></div>
+          </div>
+        </article>
+
+        <!-- placeholder: add more -->
+      </div>
+    </section>
+
+    <!-- Skills (carousel + grid) -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">From data pipelines to pentesting tools.</p>
+      </div>
+
+      <div class="skills-wrap">
+        <div class="skills-carousel">
+          <button id="prev" class="nav-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="skills-viewport">
+            <div class="skills-track">
+              <div class="skill"><i class="fa-brands fa-python"></i><span>Python</span></div>
+              <div class="skill"><i class="fa-solid fa-network-wired"></i><span>Networking</span></div>
+              <div class="skill"><i class="fa-solid fa-shield"></i><span>Bug Bounty</span></div>
+              <div class="skill"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+              <div class="skill"><i class="fa-solid fa-brain"></i><span>ML/DL</span></div>
+              <div class="skill"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+              <div class="skill"><i class="fa-solid fa-server"></i><span>Backend</span></div>
+            </div>
+          </div>
+          <button id="next" class="nav-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <div class="skills-grid-extended">
+          <div class="skill-card">Python • Data Pipelines</div>
+          <div class="skill-card">PyTorch / TensorFlow</div>
+          <div class="skill-card">Web App Pentesting (XSS, CSRF)</div>
+          <div class="skill-card">Docker • CI/CD</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
+      <div class="edu-cards">
+        <div class="edu-card">
+          <h3>M.Tech — Computer Science & Engineering</h3>
+          <p>Parul University • 2020–2022 • CGPA: 8.32</p>
+        </div>
+        <div class="edu-card">
+          <h3>B.Tech — Computer Science & Engineering</h3>
+          <p>Parul University • 2016–2020 • CGPA: 7.53</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <h2>Experience</h2>
+      </div>
+
+      <div class="exp-list">
+        <div class="exp-item">
+          <h4>Cyber Security Intern — The Red Users</h4>
+          <span class="muted">2024</span>
+          <p>Vulnerability assessment, report writing, and remediation suggestions.</p>
+        </div>
+
+        <div class="exp-item">
+          <h4>Software Developer Intern — JPMorganChase</h4>
+          <span class="muted">2024</span>
+          <p>Worked on backend services and automation scripts.</p>
+        </div>
+
+        <div class="exp-item">
+          <h4>Python Software Developer Intern — Shree Drashti Infotech LLP</h4>
+          <span class="muted">2022–2023</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Let's collaborate — internships, freelance, or full-time.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form id="contact-form" action="https://formspree.io/f/mzzbpdyv" method="POST" class="contact-form">
+          <label class="field">
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+
+          <label class="field">
+            <input type="email" name="email" placeholder="Email" required>
+          </label>
+
+          <label class="field">
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send Message</button>
+            <button type="button" id="downloadResume" class="btn ghost"><i class="fa-solid fa-download"></i> Resume</button>
+          </div>
+
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info">
+          <h3>Quick Info</h3>
+          <p><strong>Email:</strong> harsh.teckchandani@outlook.com</p>
+          <p><strong>Location:</strong> Vadodara, Gujarat, India</p>
+          <div class="socials large">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Harsh Teckchandani — Built with ❤️ • Designed for Data · Security · Software</p>
+    </footer>
+  </main>
+
+  <!-- Mobile Overlay Nav -->
+  <div id="mobileNav" class="mobile-nav">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</body>
+</html>
